@@ -38,6 +38,17 @@ Após executar, os arquivos são gerados em:
 - Totalizador de peso por vendedor.
 - Peso total geral estimado.
 - Total financeiro geral.
+- PDF de saída em **modo retrato** (A4).
+
+## Auditoria (PDF origem × CSV)
+
+Para conferir se a soma dos itens do `porVendedor.pdf` bate com o CSV gerado:
+
+```powershell
+python "c:\tmp\pedidos pr\auditar_relatorio.py"
+```
+
+O script `relatorio_unico.py` usa apenas **`c:\pdf\porVendedor.pdf`**; outros PDFs na mesma pasta não entram no merge.
 
 ## Publicação no Git
 
